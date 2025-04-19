@@ -1,7 +1,7 @@
 
 # README
-> This README contains information for the solution of a following challenge:
->> Create AWS Lambda that lists all VPCs and Subnets in the account and saves the data in a database.
+This README contains information for the solution of a following challenge:
+> Create AWS Lambda that lists all VPCs and Subnets in the account and saves the data in a database.
 
 
 

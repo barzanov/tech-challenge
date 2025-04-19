@@ -1,7 +1,7 @@
 
 # README
-> This README contains information the solution of a following challenge:
->> Create your own application. This proof of concept is used to demonstrate the technical feasibility of hosting, managing,
+This README contains information the solution of a following challenge:
+> Create your own application. This proof of concept is used to demonstrate the technical feasibility of hosting, managing,
 and scaling the platform and is not about content.
 
 
@@ -66,7 +66,7 @@ The service will restart and apply the changes.
 
 2 - To update the configuration of the nginx service, navigate to:
 ```bash
-cd ./part1/appChart/webapp
+    cd ./part1/appChart/webapp
 ```
 then edin the following file - 'nginx.conf'. Once completed, upgrade the helm chart:
 ```bash
