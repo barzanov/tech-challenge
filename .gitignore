@@ -1,0 +1,4 @@
+.idea
+part2/terraform/.terraform
+part2/terraform/.terraform.lock.hcl
+part2/terraform/.*

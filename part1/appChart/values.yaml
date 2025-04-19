@@ -1,0 +1,65 @@
+# Default values for app-chart.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: nginx
+  pullPolicy: IfNotPresent
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: true
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name:
+
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: true
+  host: webapp.so
+  ingressClassName: public
+
+# The resources are needed for the HPA to work
+resources:
+   limits:
+     cpu: 10m
+     memory: 64Mi
+   requests:
+     cpu: 5m
+     memory: 32Mi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+# Auto reloadable config map to allow easy server manage and web app updates.
+configmap:
+  enabled: true
+  htmlPath: webapp/index.html
+  confPath: webapp/nginx.conf
+
+# Scaling based on CPU and memory consumption. Change values per desire.
+hpa:
+  cpu:
+    averageUtilization: 85
+  memory:
+    averageUtilization: 85
