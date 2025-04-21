@@ -54,10 +54,10 @@ The setup allows for an easy function update.
 ```bash
     cd ./part2/terraform/labda
 ```
-then edit the following file - 'lambda_function.py'. Once completed, zip it to archive - 'function.zip' (replacing the old one).
+Then edit the following file - 'lambda_function.py'. Once completed, zip it to archive - 'function.zip' (replacing the old one).
 
 2 - Re-run terraform apply:
 ```bash
     terraform apply
 ```
-then the function will be re-deployed.
+Then the function will be re-deployed.

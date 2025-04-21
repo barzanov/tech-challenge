@@ -34,7 +34,7 @@ service:
 ingress:
   enabled: true
   host: webapp.so
-  ingressClassName: public
+  ingressClassName: nginx
 
 # The resources are needed for the HPA to work
 resources:

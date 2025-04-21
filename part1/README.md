@@ -58,7 +58,7 @@ The setup allows for an easy webapp update or nginx configuration changes.
 ```bash
     cd ./part1/appChart/webapp
 ```
-then edin the following file - 'index.html'. Once completed, upgrade the helm chart:
+Then edit the following file - 'index.html'. Once completed, upgrade the helm chart:
 ```bash
     upgrade --install --history-max 10 <INSERT-CHART-NAME> . --namespace <INSERT-NAMESPACE-NAME> -f ./values.yaml
 ```
@@ -68,7 +68,7 @@ The service will restart and apply the changes.
 ```bash
     cd ./part1/appChart/webapp
 ```
-then edin the following file - 'nginx.conf'. Once completed, upgrade the helm chart:
+Then edit the following file - 'nginx.conf'. Once completed, upgrade the helm chart:
 ```bash
     upgrade --install --history-max 10 <INSERT-CHART-NAME> . --namespace <INSERT-NAMESPACE-NAME> -f ./values.yaml
 ```
@@ -80,7 +80,7 @@ The service will restart and apply the changes.
 As of writing this README, the deployment process of the web app is manual. 
 Once agreed upon a preferred tool and environment, the process can be automated with tools like Jenkins, Github actions, etc.
 
-An example of such setup (assuming there is an existing EKS cluster, which can be access by github):
+An example of such setup (assuming there is an existing EKS cluster, which can be accessed by GitHub):
 ```yaml
 on:
  
